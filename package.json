@@ -6,17 +6,44 @@
   "directories": {
     "doc": "docs"
   },
+  "homepage": "https://tlokeshrao.com/",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "root": "cp dist/index.html index.html"
+    "root": "cp dist/index.html index.html",
+    "lint": "eslint ./src --ext .ts,.tsx",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.3",
+    "prettier": "^3.6.2",
+    "react-refresh": "^0.17.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
     "webpack": "^5.100.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3"
   }
 }
