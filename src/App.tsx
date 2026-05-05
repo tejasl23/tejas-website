@@ -1,18 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
-const Home = () => <h2>Home Page</h2>;
-const About = () => <h2>About Page</h2>;
+import Home from './Home';
+import Resume from './Resume';
+import Now from './Now';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/">Home</Link> | <Link to="/about">About</Link>
+        <Link to="/">Home</Link>
+        <Link to="/resume">Resume</Link>
+        <Link to="/now">Now</Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/now" element={<Now />} />
       </Routes>
     </BrowserRouter>
   );
