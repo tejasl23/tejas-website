@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "tejas-website",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -9,7 +9,7 @@
   "homepage": "https://tlokeshrao.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tlokeshrao/my-website.git"
+    "url": "https://github.com/tlokeshrao/tejas-website.git"
   },
   "scripts": {
     "build": "webpack",
